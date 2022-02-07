@@ -1,0 +1,1 @@
+web: gunicorn Gamers-Destiny.wsgi --log-file -
