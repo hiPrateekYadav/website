@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Popular Games for free</title>
+    <link rel="stylesheet" href="{% static 'games/styles.css' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/games/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/games/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/games/img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/games/img/site.webmanifest' %}">
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                alert('{{ message }}');
+            {% endfor %}
+        {% endif %}
+    </script>
+</head>
+
+<body>
+    <section class="parallex">
+        <div class="parallex-inner">
+            <p id="game-name">DARK SOULS 3</p>
+            <a href="DarkSouls3.html">
+                <div class="button">
+                    <button>Download</button>
+                </div>
+            </a>
+        </div>
+        <img id="anchor" src="{% static 'games/img/anchor.png' %}" alt="Scroll Down">
+    </section>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="{% static 'games/img/logo.png' %}" alt="Gamer's Destinty">
+            </div>
+            <form method="get" action="{% url 'search' %}" class="search-box">
+                <input class="search-txt" type="text" name="search" placeholder="Search your Destiny here">
+                <button type="submit" class="search-btn">
+                    <img src="{% static 'games/img/search icon.png' %}" alt="Search" style="width: 32px">
+                </button>
+            </form>
+        </nav>
+    </header>
+    <!-- <div class="margin"></div> -->
+    <main>
+        <section class="parallex-1">
+            <div class="parallex-inner-1">
+                <h1 class="heading">Games You Can Achieve<br><img src="{% static 'games/img/underline.png' %}" alt=""></h1>
+                <div class="collection">
+                    <a href="gta5.html">
+                        <img src="{% static 'games/img/gta 5.jpg' %}" alt="GTA V">
+                        <h2>GTA V</h2>
+                    </a>
+                    <a href="rdr2.html">
+                        <img src="{% static 'games/img/rdr2.jpg' %}" alt="RDR 2">
+                        <h2>RED DEAD REDEMPTION 2</h2>
+                    </a>
+                    <a href="cyberpunk.html">
+                        <img src="{% static 'games/img/cyberpunk 2077.jpg' %}" alt="CYBERPUNK 2077">
+                        <h2>CYBERPUNK 2077</h2>
+                    </a>
+                    <a href="forza4.html">
+                        <img src="{% static 'games/img/forza horizon 4.jpg' %}" alt="FORZA HORIZON 4">
+                        <h2>FORZA HORIZON 4</h2>
+                    </a>
+                    <a href="phasmophobia.html">
+                        <img src="{% static 'games/img/phasmophobia.jpg' %}" alt="PHASMOPHOBIA">
+                        <h2>PHASMOPHOBIA</h2>
+                    </a>
+                    <a href="farcry5.html">
+                        <img src="{% static 'games/img/far cry 5.jpg' %}" alt="FAR CRY 5">
+                        <h2>FAR CRY 5</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="margin"></div>
+        <h1 class="heading">Know More<br><img src="{% static 'games/img/underline.png' %}" alt=""></h1>
+        <div class="try">
+            <div class="box">
+                <div class="content">
+                    <a href="comingsoon.html">About Us</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <a href="comingsoon.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <a href="comingsoon.html">Explore</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <a href="comingsoon.html">Request Games</a>
+                </div>
+            </div>
+        </div>
+        <div class="margin"></div>
+    </main>
+    <footer>
+        <p id="Note">Note:- The Website is in Development Phase. So, all features may not work.<br> Please be patient.
+        </p>
+        <br>
+        <p>Copyright &copy; 2021 Gamer'sDestiny.com . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

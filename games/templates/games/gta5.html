@@ -1,0 +1,143 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA 5 download for free</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/games/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/games/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/games/img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/games/img/site.webmanifest' %}">
+    <link rel="stylesheet" href="{% static 'games/games.css' %}">
+    <style>
+        section {
+            background: center url(/static/games/img/gta5\ bg.jpg) repeat fixed;
+            background-size: 100vw 100vh;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                alert('{{ message }}');
+            {% endfor %}
+        {% endif %}
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="{% static 'games/img/logo.png' %}" alt="LOGO">
+            <h2 style="color: white">Welcome, {{ user.username }}</h2>
+            <div>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="left" style="background: url(/static/games/img/gta5\ 1.jpg) no-repeat center / cover;"></div>
+                <div class="right">
+                    <div class="content">
+                        <h1>About The Game</h1>
+                        <p>Grand Theft Auto V Free Download PC Game pre-installed in direct link. GTA 5 was released on
+                            Apr 14, 2015.When a young street hustler, a retired bank robber and a terrifying psychopath
+                            find themselves entangled with some of the most frightening and deranged elements of the
+                            criminal underworld, the U.S. government and the entertainment industry, they must pull off
+                            a series of dangerous heists to survive in a ruthless city in which they can trust nobody,
+                            least of all each other. GTA 5 for PC offers players the option to explore the award-winning
+                            world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the
+                            chance to experience the game running at 60 frames per second. The game offers players a
+                            huge range of PC-specific customization options, including over 25 separate configurable
+                            settings for texture quality, shaders, tessellation, anti-aliasing and more, as well as
+                            support and extensive customization for mouse and keyboard controls. Additional options
+                            include a population density slider to control car and pedestrian traffic, as well as dual
+                            and triple monitor support, 3D compatibility, and plug-and-play controller support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="right-1">
+                    <div class="content">
+                        <h1>System Requirements</h1>
+                        <p>
+                        <ul>
+                            <li>Requires a 64-bit processor and operating system.</li>
+                            <li>OS: Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service
+                                Pack 1, Windows Vista 64 Bit Service Pack 2* (*NVIDIA video card recommended if running
+                                Vista OS).</li>
+                            <li>Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core
+                                Processor (4 CPUs) @ 2.5GHz.</li>
+                            <li> Memory: 4 GB RAM.</li>
+                            <li> Graphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11).</li>
+                            <li>Storage: 72 GB available space.</li>
+                            <li>Sound Card: 100% DirectX 10 compatible.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="left-1" style="background: url(/static/games/img/gta5\ 2.jpg) no-repeat center / cover;"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="left" style="background: url(/static/games/img/gta5\ 3.jpg) no-repeat center / cover;"></div>
+                <div class="right">
+                    <div class="content">
+                        <h1>How to Install</h1>
+                        <p>
+                        <ol>
+                            <li>Click the Download button below and you should be redirected to UploadHaven.</li>
+                            <li>Wait 5 seconds and click on the blue ‘download now’ button. Now let the download begin
+                                and wait for it to finish.</li>
+                            <li> Once Grand Theft Auto V is done downloading, right click the .zip file and click on
+                                “Extract to Grand.Theft.Auto.V.v1.0.2189.0.zip” (To do this you must have 7-Zip, which
+                                you can get here).</li>
+                            <li>Double click inside the Grand Theft Auto V folder and run the exe application.</li>
+                            <li>Have fun and play! Make sure to run the game as administrator and if you get any missing
+                                dll errors, look for a Redist or _CommonRedist folder and install all the programs in
+                                the folder.</li>
+                            </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="right-1">
+                    <div class="content">
+                        <h1>Download from Here</h1>
+                        <p>Click the download button below to start Grand Theft Auto V Free Download with direct link.
+                            It is the full version of the game. Don’t forget to run the game as
+                            administrator.<br><br><br></p>
+                        <a href="https://downloadsfreefile.com/n6hjxc?title=Your%20File%20Is%20Ready%20To%20Download&click_id=2593773743801287284&source=787432&o=235"
+                            target="_main" class="btn">Download</a>
+                    </div>
+                </div>
+                <div class="left-1" style="background: url(/static/games/img/gta5\ 4.jpg) no-repeat center / cover;"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="Note">Note:- The Website is in Development Phase. So, all features may not work.<br> Please be patient.
+        </p>
+        <br>
+        <p>Copyright &copy; 2021 Gamer'sDestiny.com . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Lobster&family=Marcellus&family=Patrick+Hand&family=Ubuntu&family=Xanh+Mono&family=Zen+Old+Mincho&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Zen Old Mincho', serif;
+}
+
+nav{
+    background-color:#1e1f26;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    min-width: 94px;
+    width: 9vw;
+}
+
+nav div{
+    padding: 0 10vw;
+}
+
+nav div a{
+    color: white;
+    font-size: 20px;
+    margin: 0 0 0 25px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    width:50%;
+    height:600px;
+    background: url(/static/games/img/dark\ souls\ bg.jpg) no-repeat center / cover;
+    box-shadow: -2px 25px 40px rgba(0,0,0.5);
+    border-radius: 8px;
+}
+
+.right{
+    width:50%;
+    min-height: 400px;
+    background-color: #303137;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    border-radius:8px;
+    color:white;
+    margin-left: -150px;
+}
+
+.right h1{
+    font-size:40px;
+    font-weight: lighter;
+}
+
+.right p{
+    margin: 20px 0;
+    font-weight:500;
+    line-height:25px;
+}
+
+.right ol{
+    margin: 1px 0;
+    font-weight:500;
+    line-height:25px;
+}
+
+.left-1{
+    width:50%;
+    height:600px;
+    background: url(/static/games/img/dark\ souls\ bg.jpg) no-repeat center / cover;
+    box-shadow: 2px 25px 40px rgba(0,0,0.5);
+    border-radius: 8px;
+}
+
+.right-1{
+    width:50%;
+    min-height: 400px;
+    background-color: #303137;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    border-radius:8px;
+    color:white;
+    z-index:2;
+    margin-right: -150px;
+}
+
+.right-1 h1{
+    font-size:40px;
+    font-weight: lighter;
+}
+
+.right-1 p{
+    margin: 20px 0;
+    font-weight:500;
+    line-height:25px;
+}
+
+.right-1 ul{
+    margin: 20px 0;
+    font-weight:500;
+    line-height:25px;
+}
+
+.right-1 a{
+    font-weight:bold;
+    text-transform: uppercase;
+    color:white;
+    padding:20px 30px;
+    display:inline-block;
+    letter-spacing: 2px;
+}
+
+.right-1 a:hover{
+    text-decoration: none;
+    background-color:white;
+    color:black;
+}
+
+footer{
+    background-color:#1e1f26;
+    background-size: 100vw 228vh;
+    color: white;
+    font-size: 1.2vw;
+    height: 8vw;
+    padding: 3vh 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: top;
+}
+
+@media only screen and (max-width:768px){
+    .container{
+        flex-direction:column;
+        width:100%;
+    }
+    .left{
+        width:100%;
+        height:400px;
+    }
+    .right{
+        width:90%;
+        margin:0;
+        margin-top: -100px;
+    }
+    .left-1{
+        width:100%;
+        height:400px;
+    }
+    .right-1{
+        width:90%;
+        margin:0;
+        margin-bottom: -100px;
+    }
+    footer{
+        font-size: 1.9vw;
+    }
+}

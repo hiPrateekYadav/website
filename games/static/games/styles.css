@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Lobster&family=Marcellus&family=Patrick+Hand&family=Ubuntu&family=Xanh+Mono&family=Zen+Old+Mincho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+html{
+    background-image: url(/static/games/img/background-1.jpg);
+    font-family: 'Marcellus', serif;
+    overflow-x: hidden;
+}
+
+.parallex{
+    background: center url(/static/games/img/Dark-Souls.jpg) repeat fixed;
+    background-size: 100vw 100vh;
+}
+
+.parallex-inner{
+    padding-top: 42vh;
+    padding-bottom: 25vh;
+}
+
+#game-name{
+    font-family: 'Marcellus', serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 5.8vw;
+    color: white;
+    letter-spacing: 4vw;
+    text-shadow: 0 0 10px #fff;
+}
+
+.button{
+    text-align: center;
+}
+div button{
+    border: 1px solid white;
+    background:none;
+    padding:10px 20px;
+    font-family: 'Lobster', cursive;
+    cursor: pointer;
+    margin:10px;
+    color:white;
+    transition:0.8s;
+}
+
+button:hover{
+    color:black;
+    background:white;
+}
+
+@keyframes anchoor {
+    0%{
+        padding: 30px 48vw 8px;
+    }
+    50%{
+        padding: 10px 48vw 28px;
+    }
+    100%{
+        padding: 30px 48vw 8px;
+    }
+}
+
+#anchor{
+    animation: anchoor 2.6s linear 0.3s infinite normal;
+    /* padding: 30px 48vw 8px; */
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.logo img{
+    margin: 23vh 0.5vw 16vh;
+    height: 45vh;
+}
+
+.search-box{
+     background: #2f3640;
+    height:40px;
+    border-radius:40px;
+    padding: 10px;
+    margin: 0 0 23vh;
+}
+
+.search-txt{
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    color: white;
+    font-size:16px;
+    transition:0.4s;
+    width: 0;
+    padding: 0;
+}
+
+
+.search-btn{
+    color:whitesmoke;
+    float: right;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-box:hover > .search-txt{
+    width:30vw;
+    padding: 1.4vh 6px;
+}
+
+.search-box:hover > .search-btn{
+    background:white;
+}
+
+.parallex-1{
+    background: center url(/static/games/img/collage1.jpg) repeat fixed;
+    background-size: 100vw 100vh;
+}
+
+.parallex-inner-1{
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+}
+
+.heading{
+    font-family: 'Marcellus', serif;
+    color:white;
+    text-align: center;
+    padding: 10vh 10vh 14vh;
+    font-size: 4vw;
+    text-shadow: 0 0 20px #fff;
+}
+
+.collection{
+    display:flex;
+    width: 98vw;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.collection a{
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width:26vw;
+    height:14.5vw;
+    transition: 0.5s;
+}
+
+.collection a:hover{
+    z-index: 1;
+    transform: scale(1.12);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+.collection a img{
+    /* padding: 3vh 1vw; */
+    position:relative;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+
+.collection a h2{
+    font-size: 1.75vw;
+}
+
+.collection a:hover img{
+    filter: blur(40px);
+    filter:brightness(-33px);
+    filter:grayscale(100px);
+}
+
+.collection a:hover h2{
+    position: absolute;
+    padding: 5vw 7vw;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px black;
+}
+
+.try{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width:98vw;
+}
+
+.box{
+    position: relative;
+    width:16vw;
+    height: 29vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+}
+.box::before{
+    content: '';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:white;
+    z-index: -1;
+}
+.box::after{
+    content: '';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:white;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box::before , .box::after{
+    background:linear-gradient(235deg,#89ff00,black,#00bcd4);
+}
+.content{
+    color:white;
+}
+.content a{
+    color:white;
+    text-decoration: none;
+    padding: 4vw 3vw;
+    font-weight: bold;
+}
+
+.margin{
+    margin:10vw 0;
+}
+
+footer{
+    background: center url(/static/games/img/foot.jpg) repeat fixed;
+    background-size: 100vw 228vh;
+    color: white;
+    font-size: 1.5vw;
+    height: 8vw;
+    padding: 3vh 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: top;
+}
+
+@media only screen and (max-width:768px){
+    footer{
+        font-size: 2.3vw;
+    }
+}

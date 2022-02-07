@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Lobster&family=Marcellus&family=Patrick+Hand&family=Ubuntu&family=Xanh+Mono&family=Zen+Old+Mincho&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Old Mincho', serif;
+    background-image: url(/static/games/img/background-1.jpg)
+}
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    color: #fff;
+    top: 18%;
+    left: 39%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 50px 30px 70px;
+    background: #000;
+}
+
+.login-box::before{
+    content: '';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:white;
+    z-index: -1;
+}
+.login-box::after{
+    content: '';
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:white;
+    z-index: -2;
+    filter: blur(40px);
+}
+.login-box::before , .login-box::after{
+    background:linear-gradient(235deg,#89ff00,black,#00bcd4);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],input[type="email"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: linear-gradient(235deg,#ff0000,#0020d4);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover{
+    cursor: pointer;
+    background:linear-gradient(235deg,#00bcd4,#89ff00);
+    color: #fff;
+    z-index: -1;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.login-box a:hover{
+    columns: #ffc107;
+}
+

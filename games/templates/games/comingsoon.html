@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/games/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/games/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/games/img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/games/img/site.webmanifest' %}">
+    <title>Sorry</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+            line-break: auto;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: larger;
+            color: white;
+        }
+    </style>
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                alert('{{ message }}');
+            {% endfor %}
+        {% endif %}
+    </script>
+</head>
+
+<body>
+    <h1>Sorry!</h1><br><br>
+    <p>This Page is not Present today.But we assure you that we will start this service in near future. Till then we
+        request you to please be Patient.</p>
+
+    <footer>
+        <p id="Note">Note:- The Website is in Development Phase. So, all features may not work.<br> Please be patient.
+        </p>
+        <br>
+        <p>Copyright &copy; 2021 Gamer'sDestiny.com . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

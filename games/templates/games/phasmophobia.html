@@ -1,0 +1,157 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmophobia download for free</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/games/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/games/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/games/img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/games/img/site.webmanifest' %}">
+    <link rel="stylesheet" href="{% static 'games/games.css' %}">
+    <style>
+        section {
+            background: center url(/static/games/img/phasmophobia\ bg.png) repeat fixed;
+            background-size: 100vw 100vh;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                alert('{{ message }}');
+            {% endfor %}
+        {% endif %}
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="{% static 'games/img/logo.png' %}" alt="LOGO">
+            <h2 style="color: white">Welcome, {{ user.username }}</h2>
+            <div>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="left" style="background: url(/static/games/img/phasmophobia\ 1.jpg) no-repeat center / cover;"></div>
+                <div class="right">
+                    <div class="content">
+                        <h1>About The Game</h1>
+                        <p>Phasmophobia Free Download PC Game pre-installed in direct link. Phasmophobia was released on
+                            Sep 18, 2020.
+                            About The Game
+
+                            Phasmophobia is a 4 player online co-op psychological horror where you and your team members
+                            of paranormal investigators will enter haunted locations filled with paranormal activity and
+                            gather as much evidence of the paranormal as you can. You will use your ghost hunting
+                            equipment to search for and record evidence of whatever ghost is haunting the location to
+                            sell onto a ghost removal team. You can choose to support your team by monitoring the
+                            location with CCTV cameras and motion sensors from the safety of the truck or head inside
+                            and get your hands dirty with the ghostly activity that will get increasingly hostile as
+                            time goes on.
+                        <ul>
+                            <li>
+                                Immersive Experience: Realistic graphics and sounds as well as having minimal user
+                                interfaces will ensure a totally immersive experience that will keep you on your toes.
+                            </li>
+                            <li>Cross platform: Phasmophobia supports all players whether they have VR or not so can
+                                enjoy the game with your VR and non VR friends.</li>
+                            <li>Co-op multiplayer: Play alongside your friends with up to 4 players in this co-op horror
+                                where teamwork is key to your success.</li>
+                            <li>Unique Ghosts: Over 10 different types of Ghosts all with unique traits meaning each
+                                investigation will be different.</li>
+                            <li>Investigate: Use well known ghost hunting equipment such as EMF Readers, Spirit Boxes,
+                                Thermometers and Night Vision Cameras to find clues and gather as much paranormal
+                                evidence as you can.</li>
+                            <li>Full Voice Recognition: The Ghosts are listening! Use your actual voice to interact with
+                                the Ghosts through Ouija Boards and EVP Sessions using a Spirit Box.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="right-1">
+                    <div class="content">
+                        <h1>System Requirements</h1>
+                        <p>
+                        <ul>
+                            <li>OS: Windows 10 64Bit.</li>
+                            <li>Processor: Intel Core i5-4590 / AMD FX 8350.</li>
+                            <li>Memory: 8 GB RAM.</li>
+                            <li>Graphics: NVIDIA GTX 970 / AMD Radeon R9 290.</li>
+                            <li>Storage: 13 GB available space.</li>
+                            <li>Additional Notes: Minimum Specs are for VR, lower specs may work for Non-VR.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="left-1" style="background: url(/static/games/img/phasmophobia\ 2.jpg) no-repeat center / cover;"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="left" style="background: url(/static/games/img/phasmophobia\ 3.jpg) no-repeat center / cover;"></div>
+                <div class="right">
+                    <div class="content">
+                        <h1>How to Install</h1>
+                        <p>
+                        <ol>
+                            <li>Click the Download button below and you should be redirected to UploadHaven.</li>
+                            <li>Wait 5 seconds and click on the blue ‘download now’ button. Now let the download begin
+                                and wait for it to finish.</li>
+                            <li>Once Phasmophobia is done downloading, right click the .zip file and click on “Extract
+                                to Phasmophobia.v0.4.0.0.zip” (To do this you must have 7-Zip, which you can get here).
+                            </li>
+                            <li>Double click inside the Phasmophobia folder and run the exe application.</li>
+                            <li>Have fun and play! Make sure to run the game as administrator and if you get any missing
+                                dll errors, look for a Redist or _CommonRedist folder and install all the programs in
+                                the folder.</li>
+                            </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="right-1">
+                    <div class="content">
+                        <h1>Download from Here</h1>
+                        <p>Click the download button below to start Phasmophobia Free Download with direct link. It is
+                            the full version of the game. Don’t forget to run the game as administrator.<br>Note: Run
+                            Steam first, then run the game with ‘Launcher.exe’. If you don’t have steam running, you may
+                            get stuck at 90% loading.<br><br><br></p>
+                        <a href="https://downloadsfreefile.com/n6hjxc?title=File%3A%20Dark%20Souls%203%20v1.15%20%2B%20ALL%20DLC%27s.zip%20%20%20%20%20%20%20...&click_id=8474282000288937817&source=787432&o=235"
+                            target="_main" class="btn">Download</a>
+                    </div>
+                </div>
+                <div class="left-1" style="background: url(/static/games/img/phasmophobia\ 4.jpg) no-repeat center / cover;"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="Note">Note:- The Website is in Development Phase. So, all features may not work.<br> Please be patient.
+        </p>
+        <br>
+        <p>Copyright &copy; 2021 Gamer'sDestiny.com . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

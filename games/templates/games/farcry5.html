@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarCry 5 download for free</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static '/games/img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static '/games/img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/games/img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static '/games/img/site.webmanifest' %}">
+    <link rel="stylesheet" href="{% static 'games/games.css' %}">
+    <style>
+        section {
+            background: center url(/static/games/img/farcry5\ bg.jpg) repeat fixed;
+            background-size: 100vw 100vh;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                alert('{{ message }}');
+            {% endfor %}
+        {% endif %}
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="{% static 'games/img/logo.png' %}" alt="LOGO">
+            <h2 style="color: white">Welcome, {{ user.username }}</h2>
+            <div>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="left" style="background: url(/static/games/img/farcry5\ 1.jpg) no-repeat center / cover;"></div>
+                <div class="right">
+                    <div class="content">
+                        <h1>About The Game</h1>
+                        <p>Far Cry 5 Free Download PC Game pre-installed in direct link. Far Cry 5 was released on Mar
+                            26, 2018.
+
+                            Far Cry comes to America in the latest installment of the award-winning franchise. Welcome
+                            to Hope County, Montana, land of the free and the brave but also home to a fanatical
+                            doomsday cult known as Eden’s Gate. Stand up to cult leader Joseph Seed, and his siblings,
+                            the Heralds, to spark the fires of resistance and liberate the besieged community. Enhance
+                            your gameplay with eye tracking. Tag enemies by looking at them to increase your stealth
+                            skills and help your teammates spot threats. Compatible with all Tobii Eye Tracking gaming
+                            devices. The mission is in your hands!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="right-1">
+                    <div class="content">
+                        <h1>System Requirements</h1>
+                        <p>
+                        <ul>
+                            <li>OS: Windows 7 SP1, Windows 8.1, Windows 10 (64-bit versions only).</li>
+                            <li>Processor: Intel Core i5-2400 @ 3.1 GHz or AMD FX-6300 @ 3.5 GHz or equivalent.</li>
+                            <li>Memory: 8 GB RAM.</li>
+                            <li>Graphics: NVIDIA GeForce GTX 670 or AMD R9 270 (2GB VRAM with Shader Model 5.0 or
+                                better).</li>
+                            <li>DirectX: Version 9.0c.</li>
+                            <li>Network: Broadband Internet connection.</li>
+                            <li>Storage: 40 GB available space.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="left-1" style="background: url(/static/games/img/farcry5\ 2.jpg) no-repeat center / cover;"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="left" style="background: url(/static/games/img/farcry5\ 3.jpg) no-repeat center / cover;"></div>
+                <div class="right">
+                    <div class="content">
+                        <h1>How to Install</h1>
+                        <p>
+                        <ol>
+                            <li>Click the Download button below and you should be redirected to UploadHaven.</li>
+                            <li>Wait 5 seconds and click on the blue ‘download now’ button. Now let the download begin
+                                and wait for it to finish.</li>
+                            <li>Once Far Cry 5 is done downloading, right click the .zip file and click on “Extract to
+                                Far Cry 5.zip” (To do this you must have 7-Zip, which you can get here).</li>
+                            <li>Double click inside the Far Cry 5 folder and run the exe application.</li>
+                            <li>Have fun and play! Make sure to run the game as administrator and if you get any missing
+                                dll errors, look for a Redist or _CommonRedist folder and install all the programs in
+                                the folder.</li>
+                            </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="right-1">
+                    <div class="content">
+                        <h1>Download from Here</h1>
+                        <p>Click the download button below to start Far Cry 5 Free Download with direct link. It is the
+                            full version of the game. Don’t forget to run the game as administrator.<br><br><br></p>
+                        <a href="https://downloadsfreefile.com/n6hjxc?title=File%3A%20Dark%20Souls%203%20v1.15%20%2B%20ALL%20DLC%27s.zip%20%20%20%20%20%20%20...&click_id=8474282000288937817&source=787432&o=235"
+                            target="_main" class="btn">Download</a>
+                    </div>
+                </div>
+                <div class="left-1" style="background: url(/static/games/img/farcry5\ 4.jpg) no-repeat center / cover;"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="Note">Note:- The Website is in Development Phase. So, all features may not work.<br> Please be patient.
+        </p>
+        <br>
+        <p>Copyright &copy; 2021 Gamer'sDestiny.com . All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
